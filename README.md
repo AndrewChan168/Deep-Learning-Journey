@@ -12,7 +12,7 @@
   - [Visual Embeddings](#visual-embeddings)
   - [Generative Adversarial Network (GAN)](#generative-adversarial-network-gan)
   - [Neual Style Transfer](#neual-style-transfer)
-- [Grap Neural Networks](#grap-neural-networks)
+- [Graph Neural Networks](#graph-neural-networks)
 - [Deep Learning on Sequential Data](#deep-learning-on-sequential-data)
 - [Transformers Architecture](#transformers-architecture)
 - [Large Language Model](#large-language-model)
@@ -56,7 +56,7 @@ Object detection involves identifying and localizing objects within an image. Ob
 
 ## Neual Style Transfer
 
-# Grap Neural Networks
+# Graph Neural Networks
 
 # Deep Learning on Sequential Data
 
