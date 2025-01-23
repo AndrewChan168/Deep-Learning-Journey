@@ -11,7 +11,7 @@ class CNNEncoder(nn.Module):
         resnet = models.resnet50(weights=True)
         layers = list(resnet.children())[:-1] # remove last full connected layer
         self.resnet_base = nn.Sequential(*layers)
-        self.fc = nn.Linear(resnet.fc.in_features, embedding_size)
+        self.linear_layer = nn.Linear(resnet.fc.in_features, embedding_size)
         self.batch_norm = nn.BatchNorm1d(embedding_size, momentum=0.01)
 
     def forward(self, img):
@@ -19,7 +19,7 @@ class CNNEncoder(nn.Module):
         with torch.no_grad():
             features = self.resnet_base(img)
         features = features.reshape(features.size(0), -1)
-        final_features = self.batch_norm(self.fc(features))
+        final_features = self.batch_norm(self.linear_layer(features))
         return final_features
 
 
@@ -37,7 +37,7 @@ class RNNModel(nn.Module):
         embeds = torch.cat((input_embeds.unsqueeze(1), embeds), 1)
         rnn_inputs = pack_padded_sequence(embeds, lengths, batch_first=True) 
         hidden_outputs, _ = self.lstm_layer(rnn_inputs)
-        outputs = self.linear_layer(hidden_outputs)
+        outputs = self.linear_layer(hidden_outputs[0])
         return outputs
 
     def sample(self, input_embeds, rnn_states=None):

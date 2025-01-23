@@ -47,8 +47,9 @@ We have to calculate <b>Precision</b> and <b>Recall</b> for each classes in the 
    1. [R-CNN](R-CNN-families/R-CNN/README.md)
    2. Fast R-CNN
    3. Faster R-CNN
-   4. YOLO (You Only Look Once)
-   5. [SSD (Single Shot Detector)](Single-Shot-Detector/README.md)
+   4. Mask R-CNN
+   5. YOLO (You Only Look Once)
+   6. [SSD (Single Shot Detector)](Single-Shot-Detector/README.md)
 
 
 # 7. Reference books:
