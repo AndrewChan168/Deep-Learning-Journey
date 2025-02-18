@@ -16,6 +16,8 @@
 - [Deep Learning on Sequential Data](#deep-learning-on-sequential-data)
 - [Transformers Architecture](#transformers-architecture)
 - [Large Language Model](#large-language-model)
+  - [LLM architectures](#llm-architectures)
+  - [Pretrained Models](#pretrained-models)
 
 # Full Connected Neural Network
 
@@ -63,3 +65,13 @@ Object detection involves identifying and localizing objects within an image. Ob
 # Transformers Architecture
 
 # Large Language Model
+A **large language model (LLM)** is built on transformer architecture and is trained on massive datasets of text to learn statistical patterns and contextual relationships in language. **LLM** uses <u>self-attention</u> mechanisms to process and generate sequences.
+
+## LLM architectures
+**LLM** architectures could be classified as three families
+- <i>Autoencoders</i>
+- <i>Autoregressive Language Models</i>
+- <i>Encoder-Decoders</i>
+[LLM architectures](Large-Language-Models/README.md)
+
+## Pretrained Models
