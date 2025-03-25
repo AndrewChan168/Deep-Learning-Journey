@@ -75,3 +75,5 @@ A **large language model (LLM)** is built on transformer architecture and is tra
 [LLM architectures](Large-Language-Models/README.md)
 
 ## Pretrained Models
+Mainly focus on how to reuse pre-trained on **Hugging Face** repository
+[Usage of Hugging Face](Large-Language-Models/Pretrained-Models/README.md)
