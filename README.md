@@ -72,5 +72,4 @@ Object detection involves identifying and localizing objects within an image. Ob
 A **large language model (LLM)** is built on transformer architecture and is trained on massive datasets of text to learn statistical patterns and contextual relationships in language. **LLM** uses <u>self-attention</u> mechanisms to process and generate sequences.
 
 ## Pretrained Models
-Mainly focus on how to reuse pre-trained on **Hugging Face** repository
-[Usage of Hugging Face](Large-Language-Models/Pretrained-Models/README.md)
+Mainly focus on how to reuse pre-trained on **Hugging Face** repository [Usage of Hugging Face](Large-Language-Models/Pretrained-Models/README.md) and frameworks for building LLM applications [Frameworks for LLM Application](Large-Langhage-Models/LLM-Application-Frameworks/README.md)
