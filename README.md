@@ -12,7 +12,7 @@
   - [Visual Embeddings](#visual-embeddings)
   - [Generative Adversarial Network (GAN)](#generative-adversarial-network-gan)
   - [Neual Style Transfer](#neual-style-transfer)
-- [Graph Neural Networks](#graph-neural-networks)
+- [Graph Deep Learning](#graph-deep-learning)
 - [Deep Learning on Sequential Data](#deep-learning-on-sequential-data)
 - [Transformers Architecture](#transformers-architecture)
 - [Large Language Model](#large-language-model)
@@ -57,7 +57,21 @@ Object detection involves identifying and localizing objects within an image. Ob
 
 ## Neual Style Transfer
 
-# Graph Neural Networks
+# Graph Deep Learning
+Graph Deep Learning is designed to process data structured as graphs which are <b><i>non-Euclidean</i></b>. While other deep learning excels on Euclidean data.<br>
+[Foundation Concepts](Graph-Deep-Learning/README.md)
+
+## Graph Neural Network (GNN)
+Like traditional neural network, <b>GNN</b> is shallow stack of layers. <b>GNN</b>captures the dependencies bewteen nodes through a process called <b><i>message passing</i></b>. In each layer, every node aggregates feature information from its immediate neighbors to update its own representation.<br>
+[GNN](Graph-Deep-Learning/GNN/README.md)
+
+## Graph Attention Network (GAT)
+<b>GAT</b> improve basic GNNs by incorporating <b><i>attention mechanisms</i></b>. In standard GNN, neighbors are often weighted equally or based on the graph degree. <b>GAT</b> allows the model to learn to assign different levels of weights (importance) to different nodes in a neighborhood.<br>
+
+[GAT](Graph-Deep-Learning/GAT/README.md)
+
+## GraphSAGE 
+<b>GraphSAGE</b> is an inductive framework designed to scale <b>GNN</b>s to massive graph. Traditional GNNs often require the entire graph structure to be present during training. 
 
 # Deep Learning on Sequential Data
 
@@ -73,3 +87,5 @@ A **large language model (LLM)** is built on transformer architecture and is tra
 
 ## Pretrained Models
 Mainly focus on how to reuse pre-trained on **Hugging Face** repository [Usage of Hugging Face](Large-Language-Models/Pretrained-Models/README.md) and frameworks for building LLM applications [Frameworks for LLM Application](Large-Langhage-Models/LLM-Application-Frameworks/README.md)
+
+[def]: Gra
