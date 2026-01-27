@@ -86,6 +86,9 @@ Like traditional neural network, <b>GNN</b> is shallow stack of layers. <b>GNN</
 A **large language model (LLM)** is built on transformer architecture and is trained on massive datasets of text to learn statistical patterns and contextual relationships in language. **LLM** uses <u>self-attention</u> mechanisms to process and generate sequences.
 
 ## Pretrained Models
-Mainly focus on how to reuse pre-trained on **Hugging Face** repository [Usage of Hugging Face](Large-Language-Models/Pretrained-Models/README.md) and frameworks for building LLM applications [Frameworks for LLM Application](Large-Langhage-Models/LLM-Application-Frameworks/README.md)
+Mainly focus on how to reuse pre-trained on **Hugging Face** repository [Usage of Hugging Face](Large-Language-Models/Pretrained-Models/README.md). It also includes how to fine tuning on pre-trained model for domain adaption.
 
-[def]: Gra
+## Large Language Model Applications
+This section focus on frameworks for building LLM applications [Frameworks for LLM Application](Large-Langhage-Models/LLM-Application-Frameworks/README.md) and protocol of tools for LLM application (MCP) [Model Context Protocol (MCP)](Large-Language-Models/Model-Context-Protocol/README.md) <br>
+<br>
+We are going through the cutting-edge LLM application <b>AI Agents</b>. 
