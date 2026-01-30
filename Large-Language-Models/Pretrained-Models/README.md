@@ -1,0 +1,22 @@
+# 1. Introduction
+When we are going to fine tuning an Pre-Trained Large Language Model (LLM), we could not skip **Hugging Face**. <br>
+Hugging Face provides a platform for hosting open source pretrained models and datasets. 
+
+## 1.1 Reference Books
+1. Hugging Face in action
+2. Hands-On Large Language Models
+
+# 2. Usage of Hugging Face
+Hugging Face provides webpage for us to search models & datasets. Apart from webpage, Hugging Face also provides `transformers` python package for us to Fine-Tuning pretrained models to adapting our need.
+
+## 2.1 Searching for model and datasets
+On the Hugging Face webpage, there are tags to organize *models* & *datasets*. 
+
+# 3. transformers package
+
+## 3.1 Setup transformers package
+Follow ![00-Basic-Setup](00-Basic-Setup.ipynb) for installing packages needed for fine tuning.
+
+## 3.2 Outline of usage of transformers package
+
+# 4. Main fine-tuning tasks
