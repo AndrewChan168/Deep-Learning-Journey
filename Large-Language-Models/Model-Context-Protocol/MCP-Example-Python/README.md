@@ -49,4 +49,7 @@ Starting MCP inspector...
 ```
 
 Then you will find that **MCP Inspector** is running on browser.
- 
+
+![MCP Inspector](../../../graphs/MCP-inspector-1.jpg)
+
+## 3.3 MCP Server with basic features
