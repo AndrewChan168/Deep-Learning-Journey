@@ -38,3 +38,4 @@ The server can send data to client continuously without client having to poll or
 - **Prompts** -- The predefined templates for LLM interaction.
 
 # 4. Examples of MCP
+The example of MCP is available on ![MCP Example](MCP-Example/README.md)
