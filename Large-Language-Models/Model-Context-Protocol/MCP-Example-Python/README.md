@@ -53,3 +53,50 @@ Then you will find that **MCP Inspector** is running on browser.
 ![MCP Inspector](../../../graphs/MCP-inspector-1.jpg)
 
 ## 3.3 MCP Server with basic features
+In the [Section 3.2 MCP Server Structure](../README.md), one **MCP Server** consists of **Tools** & **Resource** & **Prompts**. The `mcp` package provides <i><u>decorators</u></i> to wrap the funtion that we are going to implement.<br>
+We are implementing demo **MCP Server** on `mcp_server.py`.
+
+```python
+### Resource Decorator
+@mcp.resource("text://{file_path}")
+def get_file(file_path: str) -> str:
+    ......
+
+### Tool Decorator
+@mcp.tool()
+def get_pdf(file_path: str) -> str:    
+    return get_pdf_data(file_path)
+
+### Prompt Decorator
+@mcp.prompt()
+def weather_report(city: str) -> str:
+    return f"""
+    Please provide a weather report for {city}.
+
+    You can use the fetch_weather tool to get current weather data.
+    If needed, you can convert temperature units using the
+    convert_temperature tool.
+
+    Please include:
+    - Current temperature
+    - Weather conditions
+    - Humidity
+    - Wind speed
+    - Any relevant weather advice for the conditions
+    """
+```
+
+Go to [mcp_server.py](../MCP-Example-Python/mcp_server.py) for full version of **MCP Server**.<br>
+We execute below command to start MCP server with MCP inspector.
+```bash
+$ uv run mcp dev mcp_server.py
+
+```
+![MCP Inspector](../../../graphs/MCP-inspector-1.jpg)
+Click on the `Connect` button. The MCP server would show up *Resources* & *Tools* & *Prompts* tags.<br>
+*Resources Tag*
+![Resources Tag](../../../graphs/MCP-inspector-resources-tag.jpg)
+*Tools Tag*
+![Tools Tag](../../../graphs/MCP-inspector-tools-tag.jpg)
+*Prompts Tag*
+![Prompts Tag](../../../graphs/MCP-inspector-prompts-tag.jpg)
