@@ -20,4 +20,20 @@ Follow ![00-Basic-Setup](00-Basic-Setup.ipynb) for installing packages needed fo
 ## 3.2 Outline of usage of transformers package
 Follow ![01-Using-Transformers-for-NLP-tasks](01-Using-Transformers-for-NLP-tasks.ipynb) for the outline of usage of `transformers` package to fine-tune pretrained model.
 
-# 4. Main fine-tuning tasks
+# 4. Common tasks for Pretrained Models
+We will go through the each common task for Pretrained Model by two steps
+Step-1: Directly Usage the Pretrained Model
+Step-2: Fine-Tune the pretrained model for better performance
+
+## 4.1 Embedding
+
+## 4.2 Clustering on Embedding
+
+## 4.3 Classification on Embedding
+
+## 4.4 Topic Models on Embedding
+
+## 4.5 Text Generation
+
+## 4.6 Multimodals
+
