@@ -15,15 +15,15 @@ On the Hugging Face webpage, there are tags to organize *models* & *datasets*.
 # 3. transformers package
 
 ## 3.1 Setup transformers package
-Follow ![00-Basic-Setup](00-Basic-Setup.ipynb) for installing packages needed for fine tuning.
+Follow [00-Basic-Setup](00-Basic-Setup.ipynb) for installing packages needed for fine tuning.
 
 ## 3.2 Outline of usage of transformers package
-Follow ![01-Using-Transformers-for-NLP-tasks](01-Using-Transformers-for-NLP-tasks.ipynb) for the outline of usage of `transformers` package to fine-tune pretrained model.
+Follow [01-Using-Transformers-for-NLP-tasks](01-Using-Transformers-for-NLP-tasks.ipynb) for the outline of usage of `transformers` package to fine-tune pretrained model.
 
 # 4. Common tasks for Pretrained Models
-We will go through the each common task for Pretrained Model by two steps
-Step-1: Directly Usage the Pretrained Model
-Step-2: Fine-Tune the pretrained model for better performance
+We will go through the each common task for Pretrained Model by two steps:
+1. Directly Usage the Pretrained Model
+2. Fine-Tune the pretrained model for better performance
 
 ## 4.1 Embedding
 
