@@ -34,6 +34,24 @@ We will go through the each common task for Pretrained Model by two steps:
 ## 4.4 Topic Models on Embedding
 
 ## 4.5 Text Generation
+There are different ways to fine tuning Pretrained models to be adapted to specific domains. The most easiest way (but less efficient way) is retraining from scratch which is in section <u>4.5.1</u>. I provided code snippet for generating words from the model.<br>
+
+Apart from fine tuning from scratch, we could train a better generative model by **Domain Adaptive Pretraining (DAPT)** & **Supervised Fine Tuning (SFT)**. In section <u>4.5.2</u>
+
+### 4.5.1 Fine Tuning from scratch
+Follow [02-FineTune-Question-Answer-Task](02-FineTune-Question-Answer-Task.ipynb) for outline of training **Question Answering** model. I would like to highlight the **format of dataset** to be feed into model. 
+
+### 4.5.2 Fine Tuning from Domain Adaptive Pretraining + Supervised Fine Tuning
+
+#### 4.5.2.1 Domain Adaptive Pretraining
+When we need to adapt a pretrained general text generation model to a specific knowledge domain (e.g. medicine, law, sports), we use the same text generation model but we apply it to a domain-specific corpus rather than a general one.<br>
+
+This is **next-token prediction** of pretrained model. To train the model for **next-token prediction**, the corpus is sliced into fixed-length sequences know as context windows. Each window is a span of text, tokenized and fed to the model as input. The window slides over long documents to cover entire corpus. Inside each window, the model predict the next token from all previous tokens. <br>
+
+Follow ......
+
+#### 4.5.2.2 Supervised fine-tuning
+
 
 ## 4.6 Multimodals
 
