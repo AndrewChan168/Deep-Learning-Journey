@@ -40,6 +40,7 @@ Apart from fine tuning from scratch, we could train a better generative model by
 
 Updating all parameters of a model is costly to train and long training time. To resolve these issues, we could fine-tune pretrained model by **parameter-efficient fine-tuning (PEFT)**. The core component of **PEFT**-based techniques is **Adapters** which proposes a set of additional modular components inside the tranformer that can be fine-tuned to improve the model's performance on a specific task without having to fine-tune all model weights.<br>
 ![Adapter Architecture](../../graphs/adapters-architecture.jpg)
+<br>
 
 Alternative to **adapters**, **low-rank adaptation (LoRA)** was introduced. **LoRA** creates a small subset of the base model to fine-tune instead of adding layers to the model. There is an demo in section <u>4.2.3</u><br>
 
@@ -66,19 +67,19 @@ Follow ......
 **QLoRA** is applying LoRA on fine tuning quantized model. It could reduce memory usage and parameters to be trained during fine-tuning. 
 
 #### 4.2.3.1 Model quantization for compressing model memory usage
-The weights of an LLM are numeric values with given precision expressed by number of bits like float64 or float32. Quantization is that we lower the number of bits while still accurately representing the original weight values.
+The weights of an LLM are numeric values with given precision expressed by number of bits like float64 or float32. Quantization is that we lower the number of bits while still accurately representing the original weight values.<br>
 ![Different bits](../../graphs/different-bits-for-precisions.jpg)
 <br>
 
-The easiest way to quantize is directly mapping high precision value to low precision value. However, there is drawback that multiple higher precision values might end up being represented by same lower precision values.
+The easiest way to quantize is directly mapping high precision value to low precision value. However, there is drawback that multiple higher precision values might end up being represented by same lower precision values.<br>
 ![Simple Quantization](../../graphs/simple-quantization.jpg)
 <br>
 
-Instead of the simple mapping approach, we could use blockwise quantization that maps certain blocks of higher precision to lower precision values.
+Instead of the simple mapping approach, we could use blockwise quantization that maps certain blocks of higher precision to lower precision values.<br>
 ![Blockwise Quantization](../../graphs/blockwise-quantization.jpg)
 <br>
 
-One commonly used blockwise approach is normalization blockwise quantization. In this approach, original high precision weights are mapped to lower bits by accounting the relative frequency of weights.
+One commonly used blockwise approach is normalization blockwise quantization. In this approach, original high precision weights are mapped to lower bits by accounting the relative frequency of weights.<br>
 ![Normalized Quantization](../../graphs/normalized-quantization.jpg)
 <br>
 
@@ -89,7 +90,7 @@ drawing here...
 #### 4.2.3.3 Fine Tune by QLoRA from scratch
 Follow [04-Fine-Tune-Instruction-model-With-QLoRA-to-sound-like-Yoda](04-Fine-Tune-Instruction-model-With-QLoRA-to-sound-like-Yoda.ipynb) for example of fine tuning **Instruction** model with QLoRA.
 
-One point to be mentioned is that the dataset feeding to the Instruction Model should follow below format.
+One point to be mentioned is that the dataset feeding to the Instruction Model should follow below format.<br>
 ![Instruction Model format](../../graphs/instruction-model-dataset-format.jpg)
 <br>
 
