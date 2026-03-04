@@ -83,6 +83,8 @@ One commonly used blockwise approach is normalization blockwise quantization. In
 ![Normalized Quantization](../../graphs/normalized-quantization.jpg)
 <br>
 
+Find more details on Quantization -> [More On Quantization](Quantization.README.md)
+
 #### 4.2.3.2 low-rank adaptation (LoRA) for reducing trainable parameters
 **LoRA** is an alterative to **adapters**. **LoRA** creates a small subset of the base model original weights to fine-tune insteading of adding new layers to model. Let's say we have a 10x10 matrix for as original weights of LLM. We could extract 10+10 weights (rank=1) or 20+20 weights (rank=2) from the original 10x10 weights. During fine tuning, we only need to update these smaller weights matrices. After fine tuning, the updated matrics are then combined with the original full weights.
 drawing here...
