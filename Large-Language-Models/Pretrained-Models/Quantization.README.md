@@ -33,9 +33,17 @@ Finally, below is the table summarising bits of floating type.
 ![Summary table](../../graphs/bits-compare-by-floating-numbers.jpg)
 <br>
 
-# 3. Quantization
+# 3. 8-bit Quantization
+Quantization aims to make LLMs more lightweight without compromising too much on performance. It is about numeric precision. It reduces the bit-width of weights and activations in a LLM in order to shrink model size, increase inference speed.<br>
 
-hand-on examples on quantization are available on notebook.
+There are two types of quantization:
+1. **Post-Training Quantization (PTQ)**: applied to trained model
+2. **Quantization-Aware Training (QAT)**: happens at training time
+This section only covers **PTQ**.<br>
+
+Usually, we use **8-bit Quantization** that converts the weights & activations of LLM from <u>high precision formats (FP32) to integers (INT8)</u>.<br>
+
+Hand-on examples on quantization are available on [quantization notebook].
 
 ## 3.1 Quantization to all layers
 
