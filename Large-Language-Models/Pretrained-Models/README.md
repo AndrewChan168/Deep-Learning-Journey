@@ -96,5 +96,19 @@ One point to be mentioned is that the dataset feeding to the Instruction Model s
 ![Instruction Model format](../../graphs/instruction-model-dataset-format.jpg)
 <br>
 
-## 4.6 Multimodals
+### 4.2.4 Prepare Dataset in fine tuning
+Keypoints to know :
+- templates for chat model / instruct model
+- tokens for special meaning
+<br>
 
+Follow []() for expoding how `transformers` package supports dataset preprocessing for fine tuning.
+
+#### 4.2.4.1 Templates for different models
+<br>
+
+#### 4.2.4.2 Tokens
+<br>
+
+#### 4.2.4.3 Data Collators
+<br>
