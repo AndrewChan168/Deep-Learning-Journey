@@ -102,13 +102,4 @@ Keypoints to know :
 - tokens for special meaning
 <br>
 
-Follow []() for expoding how `transformers` package supports dataset preprocessing for fine tuning.
-
-#### 4.2.4.1 Templates for different models
-<br>
-
-#### 4.2.4.2 Tokens
-<br>
-
-#### 4.2.4.3 Data Collators
-<br>
+Follow [Working with Datasets](05-Working-With-Dataset.ipynb) for expoding how `transformers` package supports dataset preprocessing for fine tuning.
