@@ -8,7 +8,8 @@ The `agent` module of **Langchain** is for us to build an agent. The `agent` mod
 - `Toolkit` component 
 
 ## Reference books:
-1. Generative AI on Google Cloud with Langchain
+1. AI Agents and Applications
+2. Generative AI on Google Cloud with Langchain
 
 ## Use LangGraph to build Agent
 
