@@ -16,7 +16,14 @@ The `agent` module of **Langchain** is for us to build an agent. The `agent` mod
 
 ## Use LangGraph to build Agentic Workflow
 **LangGraph** provides a robust framework for building stateful, multi-step AI application. For each **LangGraph** application, it consists of components:
-- **state** object: defines a clear and strongly typed state for the entire workflow
+- **state** object with schema that serves as the input & output for all nodes and edges
 - **node** function: a processing unit which can handles tasks such as generating search queries
 - **edge**: between nodes determine the directed flow of data, defining how information moves through the graph
 - **Entry Point** & **End Condition**: every graph needs a starting point & end conditions
+
+### Simple workflow using LangGraph
+This [notebook](by-LangGraph/01-BasicGraphWithoutLLM.ipynb) provides an example building workflow without LLM.
+
+### State of LangGraph
+
+### Tools And ToolNode with LangGraph
