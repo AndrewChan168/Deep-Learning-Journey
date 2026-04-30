@@ -57,6 +57,7 @@ When we need to adapt a pretrained general text generation model to a specific k
 This is **next-token prediction** of pretrained model. To train the model for **next-token prediction**, the corpus is sliced into fixed-length sequences know as context windows. Each window is a span of text, tokenized and fed to the model as input. The window slides over long documents to cover entire corpus. Inside each window, the model predict the next token from all previous tokens. <br>
 
 #### 4.2.2.3 Fine Tuning from Domain Adaptive Pretraining + Supervised Fine Tuning
+This README would show **QLoRA**. For comprehensive example on **Supervised Fine Tuning**, please go to [Supervised Fine Tuning](./Supervised-Fine-Tuning/README.md) folder.
 
 #### 4.2.2.4 Fine Tuning by QLoRA
 **QLoRA** is one if the effective **PEFT** techniques. It consists of two concepts:
