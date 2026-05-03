@@ -1,7 +1,6 @@
 # Building Agents with Langchain
 The fundamentl concept behind an agent in the context of generative AI application is the use of a language model as reasoning mechanism to select a seqence of actions to perform to achieve a goal. An agent has decision-making capabilities to handle complex tasks.
 <br>
-
 The `agent` module of **Langchain** is for us to build an agent. The `agent` module consists of 4 components:
 - `Agent` component
 - `AgentExecutor` component
@@ -25,6 +24,24 @@ The `agent` module of **Langchain** is for us to build an agent. The `agent` mod
 ### Simple workflow using LangGraph
 This [notebook](by-LangGraph/01-BasicGraphWithoutLLM.ipynb) provides an example building workflow without LLM.
 
+In next [notebook](by-LangGraph/02-BasicGraphWithLLM.ipynb), we added LLM to work. We modified the `state` object that the contents are stacked instead of overriding, because LLM needs reading old messages to response with accurate answer.
+
 ### State of LangGraph
+In [notebook](by-LangGraph/03-MoreWaysToCreateState.ipynb), we are showing more ways to create a `state` object for overall nodes and edges in LangGraph that are:
+- **TypeDict**
+- **DataClass**
+- **Pydantic.BaseModel**
+
+### Foundation of Agent Architecture
+**ReAct** is the most basic agent architecture. It consists of 3 steps:
+1. **Act**: The step in which model calls specific tools
+2. **Observe**: Passing output of tool back to model
+3. **Reason**: Based on the output response from the tool, the model will decide what to do in the next step.
+
+
 
 ### Tools And ToolNode with LangGraph
+
+### Agent with Memory Saver
+
+## More Agent architectures with LangGraph
