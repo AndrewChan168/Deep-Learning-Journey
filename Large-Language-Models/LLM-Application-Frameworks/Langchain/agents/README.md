@@ -38,9 +38,16 @@ In [notebook](by-LangGraph/03-MoreWaysToCreateState.ipynb), we are showing more 
 2. **Observe**: Passing output of tool back to model
 3. **Reason**: Based on the output response from the tool, the model will decide what to do in the next step.
 
+### Agent with Tools or Agent by ToolNode with LangGraph
+Most of LLM is a chat model. To work with LLM, LangGraph needs to pass messages into LLM chat model.<br>
 
+**Tools** can be integreted with LLM to interact with external systems which can be APIs or 3rd party tools. Whenever a query is asked the model can choose to call the tool and this query is based on natural language input, and this will return an output that matches tool's schema.<br>
 
-### Tools And ToolNode with LangGraph
+<u>Agent, that is created by LangGraph</u>, can work with LLM by:
+1. LLM binding with tool
+2. Using pre-build ToolNode
+
+This [notebook](by-LangGraph/04-WorkflowWithTools.ipynb) shows how to build an LLM agent that could use tool.
 
 ### Agent with Memory Saver
 
