@@ -50,5 +50,15 @@ Most of LLM is a chat model. To work with LLM, LangGraph needs to pass messages 
 This [notebook](by-LangGraph/04-WorkflowWithTools.ipynb) shows how to build an LLM agent that could use tool.
 
 ### Agent with Memory Saver
+LangGraph cannot remember the conversation with users unless we compiled the graph with memory. This [notebook](by-LangGraph/05-WorkflowWithMemory.ipynb) shows difference between LangGraph workflow with Memory and without Memory saver.
 
 ## More Agent architectures with LangGraph
+Apart from **ReAct** architecture, we still have 4 architectures.
+
+## Agentic RAG
+
+### Basic agentic RAG
+
+### Corrective RAG
+
+### Adaptive RAG
