@@ -57,16 +57,27 @@ LangGraph cannot remember the conversation with users unless we compiled the gra
 Apart from **ReAct** pattern, we still have 4 patterns.
 1. **Reflection & Refine**
 2. **Plan and Execution**
-3. **Multi-agents: co-operation**
+3. **Multi-agents: Parallel**
 4. **Multi-agents: Supervisor**
 
 ### 1. Reflection Pattern
 <u>Reflection</u> pattern is about having an agent review and critique its own work, then the agent revise the work based on that critique. 
 
+![reflection-pattern](../../../../graphs/reflection-agentic-pattern.jpg)
+
 
 ### 2. Planning Pattern
 When using <u>Planning</u> pattern, agent starts by analyzing the overall goal and understanding what success looks like. It then breaks down the goal into smaller subtasks. The agent execute the subtasks.
 
+![planning-pattern](../../../../graphs/planning-agentic-pattern.jpg)
+
+### 3. Multi-agents Parallel Pattern
+In <u>multi-agents parallel</u> pattern, the task is splitted and fan out to multiple agents running concurrently. The results are fan in to merge the results. 
+
+![Fan-out-pattern](../../../../graphs/fan-out-agentic-pattern.jpg)
+
+### 4. Multi-agents Supervisor Pattern
+In <u>multi-agents supervisor</u> pattern, we have a <b>supervisor</b> agent that understands the big picture, dynamically decides what sub-tasks to be worked by sub-agent.
 
 ## Agentic RAG
 
