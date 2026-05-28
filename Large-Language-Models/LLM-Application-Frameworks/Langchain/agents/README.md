@@ -52,8 +52,21 @@ This [notebook](by-LangGraph/04-WorkflowWithTools.ipynb) shows how to build an L
 ### Agent with Memory Saver
 LangGraph cannot remember the conversation with users unless we compiled the graph with memory. This [notebook](by-LangGraph/05-WorkflowWithMemory.ipynb) shows difference between LangGraph workflow with Memory and without Memory saver.
 
-## More Agent architectures with LangGraph
-Apart from **ReAct** architecture, we still have 4 architectures.
+
+## More Agent patterns with LangGraph
+Apart from **ReAct** pattern, we still have 4 patterns.
+1. **Reflection & Refine**
+2. **Plan and Execution**
+3. **Multi-agents: co-operation**
+4. **Multi-agents: Supervisor**
+
+### 1. Reflection Pattern
+<u>Reflection</u> pattern is about having an agent review and critique its own work, then the agent revise the work based on that critique. 
+
+
+### 2. Planning Pattern
+When using <u>Planning</u> pattern, agent starts by analyzing the overall goal and understanding what success looks like. It then breaks down the goal into smaller subtasks. The agent execute the subtasks.
+
 
 ## Agentic RAG
 
